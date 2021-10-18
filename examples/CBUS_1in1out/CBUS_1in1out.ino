@@ -158,6 +158,7 @@ void setupCBUS() {
 void setup() {
 
   Serial.begin (115200);
+  while(!Serial) { }
   Serial << endl << endl << F("> ** CBUS 1 in 1 out v1 ** ") << __FILE__ << endl;
 
   setupCBUS();

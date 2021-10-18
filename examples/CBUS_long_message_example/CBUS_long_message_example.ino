@@ -161,6 +161,7 @@ void setupCBUS() {
 void setup() {
 
   Serial.begin (115200);
+  while(!Serial) { }
   Serial << endl << endl << F("> ** CBUS Arduino long message example module ** ") << __FILE__ << endl;
 
   setupCBUS();
